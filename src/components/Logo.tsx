@@ -39,11 +39,6 @@ const Logo: React.FC<LogoProps> = ({
     lg: 'w-16 h-16'
   }
 
-  const textSizeClasses = {
-    sm: 'text-sm',
-    md: 'text-lg',
-    lg: 'text-xl'
-  }
 
   const logoSizeClasses = {
     sm: 'w-16 h-10',   // Small but visible

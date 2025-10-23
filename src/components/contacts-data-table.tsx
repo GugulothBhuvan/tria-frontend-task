@@ -22,7 +22,6 @@ import {
   TableHeader,
   TableRow,
 } from "./ui/table"
-import { Contact } from "../types/contact"
 import { useContacts } from "../context/ContactsContext"
 
 interface ContactsDataTableProps<TData, TValue> {

@@ -1,15 +1,7 @@
 import { ColumnDef } from "@tanstack/react-table"
-import { ArrowUpDown, MoreHorizontal, Star, StarOff, Edit, Copy, Trash2 } from "lucide-react"
+import { ArrowUpDown, Star, StarOff, Edit, Copy, Trash2 } from "lucide-react"
 import { Contact } from "../types/contact"
 import { Button } from "./ui/button"
-import {
-  DropdownMenu,
-  DropdownMenuContent,
-  DropdownMenuItem,
-  DropdownMenuLabel,
-  DropdownMenuSeparator,
-  DropdownMenuTrigger,
-} from "./ui/dropdown-menu"
 import { Checkbox } from "./ui/checkbox"
 
 interface ContactsTableColumnsProps {
@@ -26,8 +18,6 @@ export const createContactsTableColumns = ({
   onDelete,
   onCopy,
   onBookmark,
-  onToggleSelection,
-  selectedContacts
 }: ContactsTableColumnsProps): ColumnDef<Contact>[] => [
   {
     id: "select",

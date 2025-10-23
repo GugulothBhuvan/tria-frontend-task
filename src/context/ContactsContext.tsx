@@ -31,8 +31,6 @@ export const ContactsProvider: React.FC<ContactsProviderProps> = ({ children }) 
     setIsLoading(false)
   }, [])
 
-  // Create Fuse instance for search
-  const fuse = useMemo(() => createFuseInstance(contacts), [contacts])
 
   // Filter contacts based on current filter
   const filterContacts = (contacts: Contact[], filter: FilterType): Contact[] => {

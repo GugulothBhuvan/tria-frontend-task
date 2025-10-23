@@ -2,7 +2,6 @@ import React from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { Trash2, Bookmark, BookmarkCheck, X } from 'lucide-react'
 import { useContacts } from '../context/ContactsContext'
-import { RainbowButton } from './RainbowButton'
 import toast from 'react-hot-toast'
 
 const MassActionsBar: React.FC = () => {
@@ -12,7 +11,6 @@ const MassActionsBar: React.FC = () => {
     bookmarkSelectedContacts, 
     unbookmarkSelectedContacts,
     clearSelection,
-    filteredContacts 
   } = useContacts()
 
   const selectedCount = selectedContacts.length
